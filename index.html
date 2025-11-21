@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuya — Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="cursor"></div>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="#hero" class="nav-brand">&lt;Kuya/&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="hero-inner">
+      <h1>Hello, I'm <span>Kuya</span></h1>
+      <p class="hero-subtitle">
+        <span class="glow-text">Hobby Plugin & Script Developer<span class="typing-cursor">_</span></span>
+      </p>
+      <div class="btn-wrapper">
+        <button id="btn-projects">&gt; View Projects</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="panel">
+      <h2>About Me</h2>
+      <p>I create plugins and scripts, mostly in Java. I focus on writing clean, maintainable code and building interactive, simple solutions. My goal is to develop tools that provide specific functionality and are easy to use.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="panel projects-section">
+      <h2>Projects</h2>
+      <div class="grid">
+
+        <!-- PROJECT 1: PlayerSpoof -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/playerspoof.png');"></div>
+          <h3>Player Spoof</h3>
+          <p>Random Ping, Fake players are able to teleport away, you can define the ranks, prefix & bunch of other stuff. You can display your fake players on your proxy player count.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 2: /duel system -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/duel.png');"></div>
+          <h3>Plugin: /queue system</h3>
+          <p>Custom kits and biomes — a plugin providing a Queue system with custom kits and biomes.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 3: Simple Sword Commands -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/script.png');"></div>
+          <h3>Simple Sword Commands</h3>
+          <p>A simple script that allows you to give a player a sword which triggers commands when right/left clicked. Automatically given on join, when rejoining, you won't get another one.</p>
+          <span class="lang">Skript</span>
+        </div>
+
+        <!-- PROJECT 4: Simple Vault Plugin -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/vault.png');"></div>
+          <h3>Simple Vault Plugin</h3>
+          <p>Allows you to set custom vault amounts to roles, easy to use /pv (number).</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 5: MultiCommand -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/command.png');"></div>
+          <h3>MultiCommand</h3>
+          <p>A powerful and lightweight plugin for servers that allows you to execute multiple commands in a single line using the &amp; separator.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 6: Vanish -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/vanish.png');"></div>
+          <h3>Vanish</h3>
+          <p>A simple plugin that allows you to vanish from the game, from the leaderboard, or by going into spectator mode, or both.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 7: NoElytraBoost -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/elytra.png');"></div>
+          <h3>NoElytraBoost</h3>
+          <p>A simple plugin which disables the boosts of rockets.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 8: NoBedRespawns -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/bed.png');"></div>
+          <h3>NoBedRespawns</h3>
+          <p>A simple plugin that disables bed respawn points while still allowing players to sleep in beds.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 9: AntiAlt -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/alt.png');"></div>
+          <h3>AntiAlt</h3>
+          <p>Simple plugin, designed to prevent multiple accounts from connecting from the same IP address.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 10: AntiMending -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/mending.png');"></div>
+          <h3>AntiMending</h3>
+          <p>A simple plugin that prevents players from adding mending to their gear in any form.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 11: AntiADS -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/ads.png');"></div>
+          <h3>AntiADS</h3>
+          <p>Blocks every AD sent into chat; customizable whitelist/blacklist/punishments.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 12: Fly -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/fly.png');"></div>
+          <h3>Fly</h3>
+          <p>A simple plugin where you can fly in any gamemode.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 13: Elytra Toggle -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/elytraa.png');"></div>
+          <h3>Elytra Toggle</h3>
+          <p>A simple plugin which allows/disallows users to use elytras.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 14: Mail System -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/mail.png');"></div>
+          <h3>Mail System</h3>
+          <p>A simple plugin that allows players to send private messages and offline mail.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 15: Trust -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/trust.png');"></div>
+          <h3>Trust</h3>
+          <p>A simple plugin where you can trust a player. Once trusted, you can't attack them anymore. You can also untrust them anytime.</p>
+          <span class="lang">Java</span>
+        </div>
+
+        <!-- PROJECT 16: AntiTemplateDupe -->
+        <div class="card">
+          <div class="card-img" style="background-image: url('assets/images/template.png');"></div>
+          <h3>AntiTemplateDupe</h3>
+          <p>Prevents players from duping using the crafting recipe.</p>
+          <span class="lang">Java</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="panel">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">&lt;Plugins/&gt;</span>
+        <span class="skill">&lt;Scripts/&gt;</span>
+        <span class="skill">&lt;Java/&gt;</span>
+        <span class="skill">&lt;YAML/&gt;</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="panel">
+      <h2>Contact</h2>
+      <div class="discord-section">
+        <p>You can reach me on Discord:</p>
+        <div class="discord">
+          <img src="https://cdn.discordapp.com/avatars/947106744004390942/e1e98c291024cb695aaf42eda8817767?size=1024" alt="Discord Avatar" />
+          <span>kuyav2</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kuya</p>
+  </footer>
+
+  <script src="cursor.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

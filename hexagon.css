@@ -1,0 +1,57 @@
+/* Hexagon Section */
+.hex-section {
+  text-align: center;
+  padding: 100px 50px;
+}
+
+.hex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hexagon {
+  position: relative;
+  width: 200px;
+  height: 115px;
+  background: #111;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #555;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hexagon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0,170,255,0.4);
+}
+
+.hexagon h3 {
+  color: white;
+  font-family: 'Fira Code', monospace;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-align: center;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.8),
+    0 0 12px rgba(255,255,255,0.6),
+    0 0 20px rgba(255,255,255,0.4);
+}
+
+.hexagon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.1);
+  filter: blur(8px);
+  z-index: -1;
+}
